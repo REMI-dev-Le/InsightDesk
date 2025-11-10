@@ -3,10 +3,9 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../../material.module'; 
 
 @Component({
-  selector: 'app-topbar',
-  standalone: true,
-  imports: [CommonModule,MaterialModule],
-  template: `
+    selector: 'app-topbar',
+    imports: [CommonModule, MaterialModule],
+    template: `
     <mat-toolbar>
       <button type="button" aria-label="Menu" (click)="toggle?.()">
         <mat-icon>menu</mat-icon>
@@ -17,7 +16,7 @@ import { MaterialModule } from '../../material.module';
       <a mat-button routerLink="/incidents">Incidents</a>
     </mat-toolbar>
   `,
-  styles: [`.spacer{flex:1} .brand{margin-left:.5rem;font-weight:600}`]
+    styles: [`.spacer{flex:1} .brand{margin-left:.5rem;font-weight:600}`]
 })
 export class TopbarComponent {
 toggle?: () => void;

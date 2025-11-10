@@ -2,16 +2,14 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-not-found',
-  standalone: true,
-  imports: [CommonModule],
-  template: `
+    selector: 'app-not-found',
+    imports: [CommonModule],
+    template: `
     <p>
       not-found works!
     </p>
   `,
-  styles: [
-  ]
+    styles: []
 })
 export class NotFoundComponent {
 

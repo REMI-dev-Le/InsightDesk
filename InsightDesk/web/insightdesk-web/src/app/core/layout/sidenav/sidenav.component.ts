@@ -4,16 +4,15 @@ import { RouterModule } from '@angular/router';
 import { MaterialModule } from '../../material.module'; 
 
 @Component({
-  selector: 'app-sidenav',
-  standalone: true,
-  imports: [CommonModule,RouterModule, MaterialModule],
-   template: `
+    selector: 'app-sidenav',
+    imports: [CommonModule, RouterModule, MaterialModule],
+    template: `
     <mat-nav-list>
       <a mat-list-item routerLink="/">Home</a>
       <a mat-list-item routerLink="/incidents">Incidents</a>
     </mat-nav-list>
   `,
-  styles: [``]
+    styles: [``]
 })
 export class SidenavComponent {
 
